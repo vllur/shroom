@@ -1,0 +1,13 @@
+name: shroom
+version: 0.1.0
+
+authors:
+  - vllur <patryk.dejewski@disroot.org>
+
+targets:
+  shroom:
+    main: src/shroom.cr
+
+crystal: 1.7.2
+
+license: MIT
