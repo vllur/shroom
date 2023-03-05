@@ -8,6 +8,10 @@ targets:
   shroom:
     main: src/shroom.cr
 
+dependencies:
+  totem:
+    github: icyleaf/totem
+
 crystal: 1.7.2
 
 license: MIT

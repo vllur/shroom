@@ -1,6 +1,7 @@
-# TODO: Write documentation for `Shroom`
-module Shroom
-  VERSION = "0.1.0"
+require "totem"
 
-  # TODO: Put your code here
-end
+config = Totem.from_file "_config.yml"
+
+p! config.get("token")
+p! config.get("channel")
+p! config.get("prefixes")

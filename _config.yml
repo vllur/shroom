@@ -1,0 +1,10 @@
+# Discord token
+token: "TOKEN"
+
+# Channel ID 
+channel: 123
+
+# Bot will react to messages starting with following prefixes
+prefixes:
+- "!shroom"
+- "shroom"
