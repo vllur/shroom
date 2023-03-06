@@ -1,33 +1,24 @@
 require "totem"
 require "discordcr"
 
+require "./shroom/*"
+require "./shroom/actions/*"
+
 module Shroom
-  struct Config
-    include JSON::Serializable
+  class Bot
+    getter client : Discord::Client
+    delegate run, to: client
 
-    property token : String
-    property channel : UInt64
-    property prefixes : Array(String)
-    property commands : Hash(String, String)
-  end
-
-  config = Totem.from_file("_config.yml").mapping(Config)
-  client = Discord::Client.new(token: "Bot #{config.token}")
-
-  client.on_ready do
-    client.create_message(config.channel, "Hello")
-  end
-
-  client.on_message_create do |message|
-    # Act only on a message where first word is a prefix
-    next if message.content.empty? || !config.prefixes.join(" ").match(Regex.new(message.content.split(" ").first))
-
-    # Second word is the command
-    case message.content.split(" ")[1]
-    when config.commands["help"]
-      client.create_message(message.channel_id, "TODO")
+    def initialize(config : Config)
+      @client = Discord::Client.new(token: "Bot #{config.token}")
+      Shroom.act_on_ready(client, config)
+      Shroom.act_on_message(client, config)
     end
   end
 
-  client.run
+  def self.run(config : Config)
+    Bot.new(config).run
+  end
+
+  Shroom.run(Config.load("_config.yml"))
 end
