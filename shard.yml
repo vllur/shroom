@@ -11,6 +11,8 @@ targets:
 dependencies:
   totem:
     github: icyleaf/totem
+  discordcr:
+    github: shardlab/discordcr
 
 crystal: 1.7.2
 

@@ -1,5 +1,9 @@
 version: 2.0
 shards:
+  discordcr:
+    git: https://github.com/shardlab/discordcr.git
+    version: 0.4.1
+
   popcorn:
     git: https://github.com/icyleaf/popcorn.git
     version: 0.3.0

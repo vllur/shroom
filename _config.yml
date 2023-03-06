@@ -4,7 +4,12 @@ token: "TOKEN"
 # Channel ID 
 channel: 123
 
-# Bot will react to messages starting with following prefixes
+# Bot will react to messages starting with following prefixes (no spaces allowed)
 prefixes:
 - "!shroom"
 - "shroom"
+
+# You can customize names of the commands
+commands:
+  help: "help"
+  or: "or" # This command is meant to be in the middle of a message
