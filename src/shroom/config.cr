@@ -6,8 +6,9 @@ module Shroom
     getter channel : UInt64
     getter prefixes : Array(String)
     getter commands : Hash(String, String)
+    getter help : String
 
-    def initialize(@token : String, @channel : UInt64, @prefixes : Array(String), @commands : Hash(String, String))
+    def initialize(@token : String, @channel : UInt64, @prefixes : Array(String), @commands : Hash(String, String), @help : String)
     end
 
     def self.load(filename)

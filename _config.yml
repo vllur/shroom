@@ -13,3 +13,9 @@ prefixes:
 commands:
   help: "help"
   or: "or" # This command is meant to be in the middle of a message
+
+help: "**Commands**:\n
+- `help`: Displays this message\n
+\n
+**Features**:\n
+- `or`: Chooses between two or more options"

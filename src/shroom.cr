@@ -2,6 +2,7 @@ require "totem"
 require "discordcr"
 
 require "./shroom/*"
+require "./shroom/commands/*"
 require "./shroom/actions/*"
 
 module Shroom
