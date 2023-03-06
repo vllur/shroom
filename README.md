@@ -22,7 +22,7 @@ General purpose Discord bot, written in Crystal.
 
 ## Installation
 
-TODO: Write installation instructions here
+To run the bot you only need `docker` and `docker-compose`. Just clone the repo, add [Discord API](https://discord.com/developers/applications) token and [ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) of main channel in your guild to `_config.yml` and run `docker-compose up`.
 
 ## Usage
 
@@ -39,7 +39,7 @@ git clone https://github.com/vllur/shroom.git
 cd shroom
 ```
 
-Get [Discord API](https://discord.com/developers/applications) token and  [ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) of main channel in your guild. Copy them to `_config.yml`:
+Get [Discord API](https://discord.com/developers/applications) token and [ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) of main channel in your guild. Copy them to `_config.yml`:
 
 ```yaml
 # Discord token
@@ -66,10 +66,11 @@ crystal ./src/shroom.cr
 You can also compile the binary and then run it:
 
 ```sh
-mkdir build
-crystal build ./src/shroom.cr -o ./build/shroom
-./build/shroom
+shards build
+./bin/shroom
 ```
+
+Optimized binary can be produced by adding `--release` and `--no-debug` flags.
 
 ### Project structure
 
