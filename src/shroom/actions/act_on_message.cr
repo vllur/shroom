@@ -9,7 +9,7 @@ module Shroom
 
       case command
       when config.commands["help"]
-        client.create_message(message.channel_id, Shroom.help(config))
+        Shroom.help(client, config, message.channel_id)
       else
         if message.content.match(Regex.new(" #{config.commands["or"]} "))
           answer = message.content.split(config.commands["or"]).shuffle[0]
