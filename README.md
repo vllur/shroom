@@ -4,6 +4,7 @@
 
 <p>
 <a href="https://github.com/crystal-lang/crystal"><img src="https://img.shields.io/badge/language-crystal-776791.svg"/></a>
+<a href="https://github.com/vllur/shroom/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-%20GPL--3.0-blue"/></a>
 </p>
 
 General purpose Discord bot, written in Crystal.
