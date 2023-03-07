@@ -22,7 +22,11 @@ General purpose Discord bot, written in Crystal.
 
 ## Installation
 
-To run the bot you only need `docker` and `docker-compose`. Just clone the repo, add [Discord API](https://discord.com/developers/applications) token and [ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) of main channel in your guild to `_config.yml` and run `docker-compose up`.
+To run the bot you only need `docker` and `docker-compose`. Just clone the repo and add [Discord API](https://discord.com/developers/applications) token and [ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) of main channel in your guild to `_config.yml`.
+
+To add your bot to guild go to `https://discord.com/oauth2/authorize?client_id=CLIENT_ID&scope=bot&permissions=8` address in your browser. Remember to substitute CLIENT_ID with your bot id.
+
+Finally you can run `docker-compose up`.
 
 ## Usage
 
