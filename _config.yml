@@ -12,7 +12,15 @@ prefixes:
 # You can customize names of the commands
 commands:
   help: "help"
+  eight_ball: "8ball"
   or: "or" # This command is meant to be in the middle of a message
+
+responses:
+- "Yes"
+- "No"
+- "Maybe"
+- "Ask me later"
+- "I don't know"
 
 # Message sent to channel when the bot is started
 enable_hello: true
