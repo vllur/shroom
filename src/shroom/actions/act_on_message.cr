@@ -12,6 +12,8 @@ module Shroom
         Shroom.help(client, config, message.channel_id)
       when config.commands["eight_ball"]
         Shroom.eight_ball(client, config, message.channel_id)
+      when config.commands["shitpost"]
+        Shroom.shitpost(client, config, message.channel_id)
       else
         if message.content.match(Regex.new(" #{config.commands["or"]} "))
           answer = message.content.split(config.commands["or"]).shuffle[0]

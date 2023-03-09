@@ -12,9 +12,27 @@ prefixes:
 # You can customize names of the commands
 commands:
   help: "help"
+  shitpost: "shitpost"
   eight_ball: "8ball"
   or: "or" # This command is meant to be in the middle of a message
 
+# Elements of shitpost to generate, in order of appearance in the message
+# You can add or remove strings or whole elements groups
+shitpost:
+-
+  - "Gentelmen,"
+  - "*EKHEM*!"
+-
+  - "someone once said something about"
+  - "Sun Tzu wrote in Art of War, that"
+-
+  - "mushrooms being better than animals"
+  - "I don't know what I'm talking about"
+-
+  - "and thats an undeniable fact."
+  - "which even can be seen in the wall paintings in Lasco!"
+
+# 8ball responses
 responses:
 - "Yes"
 - "No"
@@ -28,6 +46,8 @@ hello: "Hello"
 
 help: "**Commands**:\n
 - `help`: Displays this message\n
+- `shitpost`: Generates a random shitpost\n
+- `eight_ball`: Answers given question\n
 \n
 **Features**:\n
 - `or`: Chooses between two or more options"
