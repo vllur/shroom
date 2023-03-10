@@ -48,6 +48,7 @@ hello: "Hello"
 help: "**Commands**:\n
 - `help`: Displays this message\n
 - `shitpost`: Generates a random shitpost\n
+- `drunksay`: Generates a drunk shitpost\n
 - `eight_ball`: Answers given question\n
 \n
 **Features**:\n
