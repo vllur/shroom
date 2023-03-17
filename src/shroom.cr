@@ -1,5 +1,7 @@
 require "totem"
 require "discordcr"
+require "http/client"
+require "json"
 
 require "./shroom/*"
 require "./shroom/commands/*"

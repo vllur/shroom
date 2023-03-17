@@ -14,6 +14,7 @@ commands:
   help: "help"
   shitpost: "shitpost"
   drunksay: "drunksay" # Shitpost, but in random order
+  exchange: "exchange"
   eight_ball: "8ball"
   or: "or" # This command is meant to be in the middle of a message
 
@@ -32,6 +33,13 @@ shitpost:
 -
   - "and thats an undeniable fact."
   - "which even can be seen in the wall paintings in Lasco!"
+
+# Exchange (default) settings
+exchange:
+  to: "to"
+  input_amount: 1
+  input_currency: "EUR"
+  output_currency: "USD"
 
 # 8ball responses
 responses:

@@ -16,6 +16,8 @@ module Shroom
         Shroom.shitpost(client, config, message.channel_id)
       when config.commands["drunksay"]
         Shroom.drunksay(client, config, message.channel_id)
+      when config.commands["exchange"]
+        Shroom.exchange(client, config, message)
       else
         if message.content.match(Regex.new(" #{config.commands["or"]} "))
           answer = message.content.split(config.commands["or"]).shuffle[0]
