@@ -58,6 +58,7 @@ help: "**Commands**:\n
 - `shitpost`: Generates a random shitpost\n
 - `drunksay`: Generates a drunk shitpost\n
 - `eight_ball`: Answers given question\n
+- `exchange`: Convert between currencies and crypto\n
 \n
 **Features**:\n
 - `or`: Chooses between two or more options"
