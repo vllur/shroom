@@ -4,6 +4,10 @@ shards:
     git: https://github.com/shardlab/discordcr.git
     version: 0.4.1
 
+  maschine:
+    git: https://github.com/gundy818/maschine.git
+    version: 0.1.2
+
   popcorn:
     git: https://github.com/icyleaf/popcorn.git
     version: 0.3.0

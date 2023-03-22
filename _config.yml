@@ -16,6 +16,7 @@ commands:
   drunksay: "drunksay" # Shitpost, but in random order
   exchange: "exchange"
   eight_ball: "8ball"
+  classify: "classify"
   or: "or" # This command is meant to be in the middle of a message
 
 # Elements of shitpost to generate, in order of appearance in the message
@@ -49,6 +50,12 @@ responses:
 - "Ask me later"
 - "I don't know"
 
+# Categories into which the bot will classify messages
+# You can define any set you like
+classifiers:
+- "cat"
+- "dog"
+
 # Message sent to channel when the bot is started
 enable_hello: true
 hello: "Hello"
@@ -59,6 +66,7 @@ help: "**Commands**:\n
 - `drunksay`: Generates a drunk shitpost\n
 - `eight_ball`: Answers given question\n
 - `exchange`: Convert between currencies and crypto\n
+- `classify`: Picks best way to describe your input\n
 \n
 **Features**:\n
 - `or`: Chooses between two or more options"

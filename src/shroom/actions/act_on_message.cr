@@ -1,7 +1,14 @@
 module Shroom
-  def self.act_on_message(client : Discord::Client, config : Config)
+  def self.act_on_message(client : Discord::Client, config : Config, classifier : Maschine::Bayes::BayesClassifier)
     client.on_message_create do |message|
-      # Only when first word is a prefix
+      # First, train classifier on every message
+      config.classifiers.each do |concept|
+        if message.content.includes?(concept)
+          classifier.train(concept, message.content)
+        end
+      end
+
+      # Then skip if first word is not a bot prefix
       next if message.content.empty? || !config.prefixes.join(" ").match(Regex.new(message.content.split(" ").first))
 
       command = message.content.split(" ")[1]
@@ -18,6 +25,8 @@ module Shroom
         Shroom.drunksay(client, config, message.channel_id)
       when config.commands["exchange"]
         Shroom.exchange(client, config, message)
+      when config.commands["classify"]
+        Shroom.classify(client, config, message, classifier)
       else
         if message.content.match(Regex.new(" #{config.commands["or"]} "))
           answer = message.content.split(config.commands["or"]).shuffle[0]

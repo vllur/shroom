@@ -13,6 +13,8 @@ dependencies:
     github: icyleaf/totem
   discordcr:
     github: shardlab/discordcr
+  maschine:
+    github: gundy818/maschine
 
 crystal: 1.7.2
 
