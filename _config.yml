@@ -69,4 +69,7 @@ help: "**Commands**:\n
 - `classify`: Picks best way to describe your input\n
 \n
 **Features**:\n
-- `or`: Chooses between two or more options"
+- `or`: Chooses between two or more options\n
+\n
+**Code and documentation:**\n
+https://github.com/vllur/shroom"
