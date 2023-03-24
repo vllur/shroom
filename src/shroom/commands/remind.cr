@@ -14,17 +14,17 @@ module Shroom
 
     if config.remind.["seconds"].index(unit) != nil
       spawn do
-        sleep amount.to_i.seconds
+        sleep amount.seconds
         client.create_message(message.channel_id, about)
       end
     elsif config.remind.["minutes"].index(unit) != nil
       spawn do
-        sleep amount.to_i.minutes
+        sleep amount.minutes
         client.create_message(message.channel_id, about)
       end
     elsif config.remind.["hours"].index(unit) != nil
       spawn do
-        sleep amount.to_i.hours
+        sleep amount.hours
         client.create_message(message.channel_id, about)
       end
     end
