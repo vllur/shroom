@@ -10,11 +10,12 @@ module Shroom
     getter exchange : Hash(String, String)
     getter responses : Array(String)
     getter classifiers : Array(String)
+    getter remind : Hash(String, Array(String))
     getter? enable_hello : Bool
     getter hello : String
     getter help : String
 
-    def initialize(@token : String, @channel : UInt64, @prefixes : Array(String), @commands : Hash(String, String), @shitpost : Array(Array(String)), @exchange : Hash(String, String), @responses : Array(String), @classifiers : Array(String), @enable_hello : Bool, @hello : String, @help : String)
+    def initialize(@token : String, @channel : UInt64, @prefixes : Array(String), @commands : Hash(String, String), @shitpost : Array(Array(String)), @exchange : Hash(String, String), @responses : Array(String), @classifiers : Array(String), @remind : Hash(String, Array(String)), @enable_hello : Bool, @hello : String, @help : String)
     end
 
     def self.load(filename)

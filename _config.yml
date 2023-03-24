@@ -17,6 +17,7 @@ commands:
   exchange: "exchange"
   eight_ball: "8ball"
   classify: "classify"
+  remind: "remind"
   or: "or" # This command is meant to be in the middle of a message
 
 # Elements of shitpost to generate, in order of appearance in the message
@@ -56,6 +57,25 @@ classifiers:
 - "cat"
 - "dog"
 
+# You can localize or alias time units
+remind:
+  omit: # words to ignore
+    - "me"
+    - "in"
+  confirmation:
+    - "OK"
+  seconds:
+    - "seconds"
+    - "sec"
+    - "s"
+  minutes:
+    - "minutes"
+    - "min"
+    - "m"
+  hours:
+    - "hours"
+    - "h"
+
 # Message sent to channel when the bot is started
 enable_hello: true
 hello: "Hello"
@@ -67,6 +87,7 @@ help: "**Commands**:\n
 - `eight_ball`: Answers given question\n
 - `exchange`: Convert between currencies and crypto\n
 - `classify`: Picks best way to describe your input\n
+- `remind`: Reminds you about something after a specified amount of time\n
 \n
 **Features**:\n
 - `or`: Chooses between two or more options\n

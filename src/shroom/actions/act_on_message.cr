@@ -27,6 +27,8 @@ module Shroom
         Shroom.exchange(client, config, message)
       when config.commands["classify"]
         Shroom.classify(client, config, message, classifier)
+      when config.commands["remind"]
+        Shroom.remind(client, config, message)
       else
         if message.content.match(Regex.new(" #{config.commands["or"]} "))
           answer = message.content.split(config.commands["or"]).shuffle[0]
