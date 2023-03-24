@@ -9,6 +9,8 @@
 
 General purpose Discord bot, written in Crystal.
 
+<img src="screenshot.png">
+
 <!-- TOC -->
 
 - [Installation](#installation)
