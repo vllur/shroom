@@ -30,6 +30,7 @@ General purpose Discord bot, focused on bringing functionality to your server. A
     - [exchange](#exchange)
     - [classify](#classify)
     - [remind](#remind)
+    - [or](#or)
 - [Development](#development)
   - [Project structure](#project-structure)
   - [Adding a command](#adding-a-command)
@@ -291,6 +292,17 @@ remind:
 ```
 
 `omit` words are completely ignored. `confirmation` takes one response at random to indicate successful set of the timer. `seconds`, `minutes` and `hours` are localizations and abbreviations of time units. Bot will spawn a new process, which waits for specified amount of time and pings you with your message.
+
+### or
+
+Usage example:
+
+```
+shroom one or two
+shroom one or two or three or four
+```
+
+This command is meant to be in the middle of a message without command. It will separate the message and return one choice as an answer.
 
 ## Development
 
