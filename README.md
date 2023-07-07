@@ -67,7 +67,7 @@ You probably want to further edit `_config.yml` to configure the bot to your lik
 You only need to have `docker` and `docker-compose` commands available. Then simply:
 
 ```sh
-docker-compose up
+docker-compose up --build
 ```
 
 ### Running with Crystal
