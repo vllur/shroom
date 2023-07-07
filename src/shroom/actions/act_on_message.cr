@@ -9,7 +9,7 @@ module Shroom
       end
 
       # Then skip if first word is not a bot prefix
-      next if message.content.empty? || !config.prefixes.join(" ").match(Regex.new(message.content.split(" ").first))
+      next unless config.prefixes.any? { |prefix| prefix == message.content.split(" ").first }
 
       command = message.content.split(" ")[1]
       message.content = message.content.split(" ").skip(1).join(" ")
