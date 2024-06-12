@@ -1,4 +1,4 @@
-FROM crystallang/crystal:1.7.2
+FROM crystallang/crystal:1.12.2
 
 RUN mkdir /app
 COPY . /app

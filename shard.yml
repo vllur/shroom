@@ -16,6 +16,6 @@ dependencies:
   maschine:
     github: gundy818/maschine
 
-crystal: 1.7.2
+crystal: 1.12.2
 
 license: GPL-3.0
