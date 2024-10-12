@@ -240,7 +240,7 @@ exchange:
 
 `to` parameter is a separator in command. Rest are default values to send to API when user have't passed them.
 
-The command utilizes [https://api.exchangerate.host/](https://api.exchangerate.host) API. It supports conventional currencies and crypto. If output amound is greater or equals `0.01`, it is rounded to 2 decimal places. Otherwise full answer is given.
+The command utilizes [https://api.exchangerate.host/](https://api.exchangerate.host) API. It supports conventional currencies and crypto. If output amount is greater or equals `0.01`, it is rounded to 2 decimal places. Otherwise full answer is given.
 
 #### classify
 
